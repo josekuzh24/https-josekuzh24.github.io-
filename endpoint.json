@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: jk-test-api
+  version: 1.0.0
+paths:
+  /get:
+    post:
+      summary: Endpoint for JSON Data
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                field1: Name
+                  type: string
+                field2: Age
+                  type: number
+      responses:
+        '200':
+          description: Successful response
